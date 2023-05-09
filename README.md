@@ -1,7 +1,9 @@
-## Getting Started with Expo React Native App (Dev Client)
-This README provides a step-by-step guide to setting up and running an Expo React Native app using the Expo Dev Client.
+## Getting Started with Expo React Native App (Expo Go)
+
+This README provides a step-by-step guide to setting up and running an Expo React Native app using Expo Go.
 
 ### Prerequisites
+
 Before you start, please ensure that you have the following installed on your machine:
 
 - Node.js - Install the LTS version (recommended) or the latest version.
@@ -9,18 +11,21 @@ Before you start, please ensure that you have the following installed on your ma
 - Xcode - Install Xcode to run the app on an iOS simulator (macOS only). You may also use Android Studio to run the app on an Android emulator.
 
 ### Setting Up the Project
+
 1. Clone the repository to your local machine using `git clone <repository-url>`.
 2. Navigate to the project directory using `cd <project-directory>`.
 3. Install the project dependencies by running `npm install` or `yarn install` (if you have Yarn installed).
 
 ### Running the App
-To run the Expo React Native app using the Expo Dev Client, follow these steps:
 
-1. Start the development server by running `npx expo start --dev-client`. This start the process 
+To run the Expo React Native app using Expo Go, follow these steps:
+
+1. Start the development server by running `expo start`. This will open the Expo Dev Tools in your terminal.
 2. To run the app on an iOS simulator (macOS only), press `i` in the terminal window. This will open the app in the iOS simulator. If you don't have the required simulator installed, Xcode will prompt you to download and install it.
 3. To run the app on an Android emulator, press `a` in the terminal window. This will open the app in the Android emulator. Make sure you have the emulator running before pressing `a`.
 
 ### Running the App on a Physical Device
+
 To run the app on a physical device, follow these steps:
 
 1. Install the Expo Go app on your iOS or Android device.
@@ -29,10 +34,11 @@ To run the app on a physical device, follow these steps:
 4. The app should now load on your device. As you make changes to the app's code, the app will automatically reload to display the latest changes.
 
 ### Troubleshooting
+
 If you encounter any issues while running the app, try the following:
 
 - Ensure that you have the latest version of Expo CLI installed.
 - Delete the `node_modules` folder and reinstall the dependencies by running `npm install` or `yarn install`.
-- Reset the cache by running `npx expo start --dev-client --clear`.
+- Reset the cache by running `expo start --clear`.
 
 For more information, refer to the [Expo documentation](https://docs.expo.io/).
