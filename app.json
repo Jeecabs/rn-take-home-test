@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "takehome-test",
+    "slug": "takehome-test",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.lachlan.takehometest"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "jsEngine": "jsc",
+      "bundleIdentifier": "com.lachlan.takehometest"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ae1ebd36-aad0-48e6-8acb-4e10cac7963f"
+      }
+    }
+  }
+}
