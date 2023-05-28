@@ -12,6 +12,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import Slider from "@react-native-community/slider";
 import BlurAlternative from "./AndroidBlurBackground";
 import { MediaPlayerProps } from "../@types";
+import { ColorsScheme, GlobalStyles } from "../style/GlobalStyles";
 
 export const MediaPlayer: React.FC<MediaPlayerProps> = ({
   song,
@@ -85,10 +86,7 @@ export const MediaPlayer: React.FC<MediaPlayerProps> = ({
 
 const styles = StyleSheet.create({
   mediaPlayerContainer: {
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
+    ...GlobalStyles.absoluteFill,
   },
   mediaPlayerAlbumArt: {
     width: 50,
@@ -97,7 +95,7 @@ const styles = StyleSheet.create({
   mediaPlayerTitle: {
     flex: 1,
     marginLeft: 10,
-    color: "white",
+    color: ColorsScheme.white,
     fontSize: 16,
   },
   slider: {
@@ -105,16 +103,11 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   mediaPlayer: {
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    ...GlobalStyles.absoluteFill,
+    backgroundColor: ColorsScheme.transparentBlack,
     padding: 20,
   },
   mediaPlayerInfo: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
+    ...GlobalStyles.rowSpaceBetween,
   },
 });
