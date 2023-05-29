@@ -37,7 +37,7 @@ export const MediaPlayer: React.FC<MediaPlayerProps> = ({
             <MaterialIcons
               name={isPlaying ? "pause" : "play-arrow"}
               size={48}
-              color="white"
+              color={ColorsScheme.white}
             />
           </TouchableOpacity>
         </View>
@@ -48,8 +48,8 @@ export const MediaPlayer: React.FC<MediaPlayerProps> = ({
           value={position}
           onValueChange={handleSliderValueChange}
           onSlidingComplete={handleSliderValueChange}
-          minimumTrackTintColor="#FFFFFF"
-          maximumTrackTintColor="#000000"
+          minimumTrackTintColor={ColorsScheme.white}
+          maximumTrackTintColor={ColorsScheme.black}
         />
       </BlurView>
     );
@@ -66,7 +66,8 @@ export const MediaPlayer: React.FC<MediaPlayerProps> = ({
           <MaterialIcons
             name={isPlaying ? "pause" : "play-arrow"}
             size={48}
-            color="white"
+            color={ColorsScheme.white}
+            
           />
         </TouchableOpacity>
       </View>
@@ -77,8 +78,8 @@ export const MediaPlayer: React.FC<MediaPlayerProps> = ({
         value={position}
         onValueChange={handleSliderValueChange}
         onSlidingComplete={handleSliderValueChange}
-        minimumTrackTintColor="#FFFFFF"
-        maximumTrackTintColor="#000000"
+        minimumTrackTintColor={ColorsScheme.white}
+        maximumTrackTintColor={ColorsScheme.black}
       />
     </BlurAlternative>
   );

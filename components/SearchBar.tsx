@@ -7,23 +7,25 @@ interface SearchBarProps {
   onSearch: (searchText: string) => void;
   searchText: string;
   setSearchText: (searchText: string) => void;
+  testID?: string;
 }
 
 export const SearchBar: React.FC<SearchBarProps> = ({
   onSearch,
   searchText,
   setSearchText,
+  testID
 }) => {
   const handleSearch = () => {
     onSearch(searchText);
   };
 
   return (
-    <View style={styles.searchBar}>
+    <View style={styles.searchBar} >
       <MaterialIcons
         name="search"
         size={24}
-        color="#777"
+        color={ColorsScheme.black}
         style={styles.searchIcon}
       />
       <TextInput
@@ -32,6 +34,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
         value={searchText}
         placeholder="Search for an artist"
         onSubmitEditing={handleSearch}
+        testID={testID}
       />
     </View>
   );
