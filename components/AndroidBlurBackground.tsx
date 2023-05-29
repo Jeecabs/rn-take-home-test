@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
+import { ColorsScheme } from "../style/GlobalStyles";
 
 export interface BlurAlternativeProps {
   style?: any;
@@ -15,7 +16,7 @@ const BlurAlternative: React.FC<BlurAlternativeProps> = ({
 
 const styles = StyleSheet.create({
   translucentOverlay: {
-    backgroundColor: "rgba(0, 0, 0, 0.4)",
+    backgroundColor: ColorsScheme.transparentBlack,
   },
 });
 

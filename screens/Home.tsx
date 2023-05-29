@@ -200,7 +200,7 @@ const Home: React.FC = () => {
   }, [isPlaying, soundObject]);
 
   return (
-    <View style={styles.safeArea}>
+    <View style={styles.safeArea} testID="home">
       <SafeAreaView style={styles.safeArea}>
         <StatusBar barStyle="dark-content" />
 
@@ -209,6 +209,7 @@ const Home: React.FC = () => {
             onSearch={handleSearchSongs}
             searchText={searchText}
             setSearchText={setSearchText}
+            testID="search-bar"
           />
           <MusicPlayerContentComponent
             appMode={appMode}
