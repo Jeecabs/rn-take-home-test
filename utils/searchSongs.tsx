@@ -1,5 +1,9 @@
 import { Song } from "../@types";
 
+/**
+ * Note: In an ideal world I would be able to paginate the results rather than to just have to load more results.
+ * Unfortunately the solution is for the resultLimit to be increased with each successive call due to the user scrolling down the list.
+ */
 export const searchSongs = async (
   searchText: string,
   resultLimit: number
